@@ -1,0 +1,118 @@
+.table-container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  text-align: left;
+}
+
+table thead tr {
+  background-color: #8b6f4e;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #8b6f4e;
+}
+
+.filters select {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* DosetteTable.css and ModifierDosette.css */
+
+/* Style for buttons */
+.action-button {
+  padding: 8px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modifier-button {
+  background-color: #4CAF50; /* Green color for Modifier */
+  color: white;
+}
+
+.supprimer-button {
+  background-color: #f44336; /* Red color for Supprimer */
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border: 1px solid #4CAF50;
+  outline: none;
+}
+
+/* Style for form */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Style for table buttons */
+table .action-button {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Add these styles to your CSS file */
+.display-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #007bff; /* Blue color for display buttons */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.display-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
