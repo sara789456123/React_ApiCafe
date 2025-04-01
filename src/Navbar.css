@@ -1,9 +1,10 @@
 .navbar {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #8b6f4e;
+  background-color: hsl(25, 57%, 38%);
+  left: 50%;
+  margin-top: 15px;
 }
 
 .navbar .logo {
@@ -14,6 +15,7 @@
 .navbar h1 {
   color: #fff;
   margin: 0;
+  align-items: center;
 }
 
 .navbar .links a {
@@ -25,4 +27,7 @@
 
 .navbar .links a:hover {
   text-decoration: underline;
+}
+#panier {
+  width: 25px;
 }

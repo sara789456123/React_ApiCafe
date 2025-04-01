@@ -12,7 +12,7 @@ table {
 }
 
 table thead tr {
-  background-color: #8b6f4e;
+  background-color: #99582a;
   color: #ffffff;
   text-align: left;
 }
@@ -23,11 +23,11 @@ table td {
 }
 
 table tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #99582a;
 }
 
 table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: #99582a;
 }
 
 table tbody tr:last-of-type {
@@ -53,7 +53,7 @@ table tbody tr:last-of-type {
 }
 
 .modifier-button {
-  background-color: #4CAF50; /* Green color for Modifier */
+  background-color: #4caf50; /* Green color for Modifier */
   color: white;
 }
 
@@ -84,7 +84,7 @@ input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 select:focus {
-  border: 1px solid #4CAF50;
+  border: 1px solid #4caf50;
   outline: none;
 }
 
