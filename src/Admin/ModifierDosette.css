@@ -1,0 +1,46 @@
+
+/* Champs de formulaire */
+form input[type="text"],
+form input[type="number"],
+form input[type="hidden"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+button.action-button.modifier-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0eb129;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.action-button.modifier-button:hover {
+  background-color: #0c9923;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}

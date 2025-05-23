@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f9;
+}
+
+.panier-container {
+  background: #5c4033; /* Matching background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto; /* Center the container */
+  color: #fff; /* White text for contrast */
+  text-align: left;
+}
+
+.panier-container h2 {
+  margin-bottom: 20px;
+  color: #fff; /* White title */
+  text-align: center; /* Center the title */
+}
+
+.panier-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.panier-container th,
+.panier-container td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #8d6e63; /* Border color matching theme */
+}
+
+.panier-container th {
+  background-color: #8d6e63; /* Header background color */
+  color: white;
+}
+
+.panier-container input[type="number"] {
+  width: 50px;
+  padding: 8px;
+  border: 1px solid #8d6e63; /* Border color matching theme */
+  border-radius: 4px;
+  background-color: #fff; /* White background for input fields */
+}
+
+.panier-container h3 {
+  color: #fff; /* White text for total price */
+  margin: 10px 0;
+  text-align: right; /* Align total price to the right */
+}
+
+.payment-button {
+  width: 150px;
+  padding: 10px;
+  background-color: #8d6e63; /* Button color matching theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-button:hover {
+  background-color: #6d4c41; /* Darker shade on hover */
+}
+
+.payment-message {
+  color: #4caf50; /* Green for payment confirmation message */
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e60000;
+}

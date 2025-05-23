@@ -1,64 +1,134 @@
-.table-container {
-  margin: 20px auto;
-  width: 90%;
-}
-
-table {
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 1em;
-  text-align: left;
+ background-color:#432818;
 }
 
-table thead tr {
-  background-color: #99582a;
+.container {
+  width: 100%;
+  min-height: 100vh; /* Use viewport height to ensure full height */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Container for the dosette cards */
+.dosette-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Layout for the card grid */
+.dosette-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual card styling */
+.dosette-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+  background-color: #814406;
+}
+
+.dosette-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling within the card */
+.card-img-left {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative; /* Ensure this is set */
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-top: 0;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.card-price {
+  font-size: 1.2em;
   color: #ffffff;
-  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
-table th,
-table td {
-  padding: 12px 15px;
+.card-price::before {
+  content: "";
+  margin-right: 0;
 }
 
-table tbody tr {
-  border-bottom: 1px solid #99582a;
+.card-text-small {
+  font-size: 1em;
+  color: #ffff;
+  margin: 5px 0;
 }
 
-table tbody tr:nth-of-type(even) {
-  background-color: #99582a;
-}
-
-table tbody tr:last-of-type {
-  border-bottom: 2px solid #8b6f4e;
-}
-
-.filters select {
-  margin-right: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-/* DosetteTable.css and ModifierDosette.css */
-
-/* Style for buttons */
+/* Button styling */
 .action-button {
   padding: 8px 12px;
-  margin: 2px;
+  margin: 5px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+.ajouter-button {
+  background-color: #c5b9b9;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: auto;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.ajouter-button:hover {
+  opacity: 0.9;
 }
 
 .modifier-button {
-  background-color: #4caf50; /* Green color for Modifier */
+  background-color: #4caf50;
   color: white;
 }
 
 .supprimer-button {
-  background-color: #f44336; /* Red color for Supprimer */
+  background-color: #f44336;
   color: white;
 }
 
@@ -66,41 +136,7 @@ table tbody tr:last-of-type {
   opacity: 0.9;
 }
 
-/* Style for input fields */
-input[type="text"],
-input[type="number"],
-input[type="password"],
-select {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0 10px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-select:focus {
-  border: 1px solid #4caf50;
-  outline: none;
-}
-
-/* Style for form */
-form {
-  max-width: 500px;
-  margin: auto;
-}
-
-/* Style for table buttons */
-table .action-button {
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-/* Add these styles to your CSS file */
+/* Display buttons styling */
 .display-button {
   padding: 10px 20px;
   margin: 5px;
@@ -108,11 +144,27 @@ table .action-button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  background-color: #007bff; /* Blue color for display buttons */
+  background-color: hsl(29, 79%, 23%);
   color: white;
   transition: background-color 0.3s ease;
 }
 
 .display-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: hsl(29, 84%, 19%);
+}
+
+/* Filters container styling */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

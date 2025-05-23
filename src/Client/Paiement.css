@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-container {
+  background: #5C4033; /* Couleur de fond café */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left; /* Aligner le texte à gauche */
+  color: #fff; /* Texte en blanc pour contraste */
+}
+
+.payment-container h2 {
+  margin-bottom: 20px;
+  color: #fff; /* Titre en blanc */
+  text-align: center; /* Centrer le titre */
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.payment-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #8D6E63; /* Bordure café */
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fff; /* Fond blanc pour les champs de saisie */
+  font-size: 16px;
+}
+
+.payment-input:focus {
+  outline: none;
+  border-color: #6D4C41; /* Bordure café plus foncée au focus */
+}
+
+.payment-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8D6E63; /* Couleur café pour le bouton */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.payment-button:hover {
+  background-color: #6D4C41; /* Couleur café plus foncée au survol */
+}
+
+.error-message {
+  color: #E57373; /* Rouge pour les messages d'erreur */
+  margin-top: 10px;
+  text-align: center; /* Centrer le message d'erreur */
+  font-size: 14px;
+}

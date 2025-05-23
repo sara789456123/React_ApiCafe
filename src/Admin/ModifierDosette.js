@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+import "./ModifierDosette.css";
+
 function ModifierDosette() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -41,35 +43,40 @@ function ModifierDosette() {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(`http://172.17.0.56:8000/api/update/${id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          nom: dosette.nom,
-          intensite: dosette.intensite,
-          prix: dosette.prix,
-          id_marque: dosette.id_marque, 
-          id_pays: dosette.id_pays,   
-        }),
-      });
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-      if (response.ok) {
-        navigate('/');
-      } else {
-        console.error('Error updating dosette');
-      }
-    } catch (error) {
-      console.error('Error updating dosette:', error);
+  console.log("ici avec " + id)
+  console.log('http://172.17.0.56:8000/api/update/'+id);
+  try {
+     const response = await fetch('http://172.17.0.56:8000/api/update/'+id, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nom: dosette.nom,
+        intensite: dosette.intensite,
+        prix: dosette.prix,
+        id_marque: dosette.id_marque,
+        id_pays: dosette.id_pays,
+      }),
+    });
+
+
+    if (response.ok) {
+      navigate('/');
+    } else {
+      console.error('Erreur lors de la mise à jour de la dosette');
     }
-  };
+  } catch (error) {
+    console.error('Erreur réseau :', error);
+  }
+};
 
   return (
     <div>
+      <button className="back-button" onClick={() => navigate(-1)}>
+       Retour
+      </button>
       <h2>Modifier Dosette</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -82,7 +89,7 @@ function ModifierDosette() {
         <input
           type="number"
           name="intensite"
-          placeholder="Intensit�"
+          placeholder="Intensité"
           value={dosette.intensite}
           onChange={handleChange}
         />
@@ -93,22 +100,21 @@ function ModifierDosette() {
           value={dosette.prix}
           onChange={handleChange}
         />
-        <input
-          type="text"
-          name="marque"
-          placeholder="Marque"
-          value={dosette.marque}
-          onChange={handleChange}
-          readOnly 
-        />
-        <input
-          type="text"
-          name="pays"
-          placeholder="Pays"
-          value={dosette.pays}
-          onChange={handleChange}
-          readOnly 
-        />
+          <input
+            type="text"
+            name="marque"
+            placeholder="Marque"
+            value={dosette.marque}
+            readOnly
+          />
+          <input
+            type="text"
+            name="pays"
+            placeholder="Pays"
+            value={dosette.pays}
+            readOnly
+          />
+
         <input
           type="hidden"
           name="id_marque"

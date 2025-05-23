@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.account-container {
+  background: #8a5b37;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.account-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.account-container h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.account-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-container label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.account-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.save-button {
+  background-color: #71c273;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #71ce74;
+}
+
+.logout-button {
+  background-color: #ea5252;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c62828;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}

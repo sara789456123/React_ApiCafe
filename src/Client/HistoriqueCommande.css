@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f9;
+}
+
+.historique-container {
+  background: #5C4033; /* Matching background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto; /* Center the container */
+  color: #fff; /* White text for contrast */
+  text-align: left;
+}
+
+.historique-container h2 {
+  margin-bottom: 20px;
+  color: #fff; /* White title */
+  text-align: center; /* Center the title */
+}
+
+.historique-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.historique-table th,
+.historique-table td {
+  border: 1px solid #8D6E63; /* Border color matching theme */
+  padding: 12px;
+  text-align: left;
+}
+
+.historique-table th {
+  background-color: #8D6E63; /* Header background color */
+  color: white;
+}
+
+.articles-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.articles-list li {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #6D4C41; /* Slightly darker background for list items */
+  border-radius: 4px;
+}
+
+.articles-list li:nth-child(even) {
+  background-color: #795548; /* Alternate color for even list items */
+}

@@ -1,0 +1,47 @@
+.marques-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.marques-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.marque-card {
+  background-color: #e8f0fe;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.marque-card:hover {
+  transform: scale(1.05);
+}
+
+.marque-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2a2a2a;
+}
+
+
+.back-button {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
