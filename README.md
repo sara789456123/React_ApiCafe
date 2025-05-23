@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##L'apli fait quoi ??
+
+Permet de se connecter avec un compte client ou admin 
+Permet d’acheter faussement une dosette ou plusieur:
+Affiche les informations des dosettes ; nom; marque, img, intensite, prix , pays 
+Bouton ajouter pour ajouter au panier
+Page compte avec status adresse modifiable et bouton déconnexion 
+Page panier récap des articles nombre , nom , option suppri, bouton acheter
+redirection vers pages adresse pour l’envoie du colis
+Page historique : tableau d’historqiue des commandes passé avec date heure total et articles, nombresxcout 
+Page Accueil affiche dosette donc + filtre prix min max intensité min et max trie par marque par pays et par ordre ASC ou DESC
+Page Admin Filtre encore bouton modifier sur chaque dosette ou modifie n’importe quoi dans la fiche dosette . Bouton suppr pour suppr dosette . Bouton ajouter Dosettes 
+
